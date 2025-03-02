@@ -19,4 +19,4 @@ if r.status_code == 200:
     print(f"{ly}2Fa{w}⋮ {'Yes' if user_data['mfa_enabled'] else "No"}")
     print(f"{ly}CREATOR{w}⋮ github.com/sxploit")
 else:
-    print(f"Error: {r.status_code}, {r.text}")
+    print(f"Error: {r.status_code} - {r.text}")
